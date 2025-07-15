@@ -9,7 +9,7 @@ const About: React.FC = () => {
       role: 'Lead Physiotherapist',
       qualifications: 'MSc Sports Physiotherapy, MCSP',
       experience: '15+ years',
-      image: 'https://images.pexels.com/photos/5214413/pexels-photo-5214413.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       specialties: ['Sports Injuries', 'Manual Therapy', 'Dry Needling']
     },
     {
@@ -17,8 +17,7 @@ const About: React.FC = () => {
       role: 'Senior Physiotherapist',
       qualifications: 'BSc Physiotherapy, HCPC',
       experience: '12+ years',
-      image: 'https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      specialties: ['Orthopaedic', 'Post-Surgery Rehab', 'Exercise Therapy']
+      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',      specialties: ['Orthopaedic', 'Post-Surgery Rehab', 'Exercise Therapy']
     },
     {
       name: 'Dr. Emily Chen',
@@ -68,12 +67,18 @@ const About: React.FC = () => {
         <meta name="keywords" content="about physiotherapy, expert physiotherapists, rehabilitation team, London physiotherapy clinic" />
       </Helmet>
 
+
+
+
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-blue-dark to-primary-blue-light text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-blue-dark " style={{
+          backgroundImage: `radial-gradient(circle 600px at 50% 50%, rgba(59,130,246,0.3), transparent)`,
+          }}>
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">About ProHealth Physiotherapy</h1>
-            <p className="text-xl text-gray-100 leading-relaxed">
+            <p className="text-xl text-gray-900 leading-relaxed">
               We are a dedicated team of healthcare professionals committed to helping you achieve optimal health and wellness through expert physiotherapy and rehabilitation services.
             </p>
           </div>
@@ -104,7 +109,7 @@ const About: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/6111707/pexels-photo-6111707.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src="https://prohealthphysio.co.uk/images/5.jpg" 
                 alt="ProHealth Physiotherapy Clinic" 
                 className="rounded-lg shadow-xl"
               />
@@ -129,7 +134,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-green to-primary-blue-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gray-800 from-primary-green to-primary-blue-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-primary-blue-dark">{value.title}</h3>
@@ -201,7 +206,7 @@ const About: React.FC = () => {
       <section className="section-padding bg-primary-blue-dark text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Recovery Journey?</h2>
-          <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
             Experience the difference that expert, personalized physiotherapy care can make in your life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

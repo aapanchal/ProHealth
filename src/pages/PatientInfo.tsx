@@ -21,12 +21,16 @@ const PatientInfo: React.FC = () => {
         <meta name="keywords" content="patient information, physiotherapy clinic, acupuncture, medical insurance, what to expect" />
       </Helmet>
 
+
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-primary-blue text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-blue-dark " style={{
+          backgroundImage: `radial-gradient(circle 600px at 50% 50%, rgba(59,130,246,0.3), transparent)`,
+          }}>
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">{PATIENT_INFO_CONTENT.hero.title}</h1>
-            <p className="text-xl text-gray-100 leading-relaxed">
+            <p className="text-xl text-gray-800 leading-relaxed">
               {PATIENT_INFO_CONTENT.hero.description}
             </p>
           </div>
@@ -56,7 +60,7 @@ const PatientInfo: React.FC = () => {
             
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src="https://prohealthphysio.co.uk/images/2.jpg" 
                 alt="Acupuncture treatment" 
                 className="rounded-lg shadow-xl w-full"
               />
@@ -74,7 +78,7 @@ const PatientInfo: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/6111739/pexels-photo-6111739.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src="https://images.pexels.com/photos/5473182/pexels-photo-5473182.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
                 alt="Physiotherapy clinic reception" 
                 className="rounded-lg shadow-xl w-full"
               />

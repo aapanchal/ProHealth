@@ -92,12 +92,16 @@ const Contact: React.FC = () => {
         <meta name="keywords" content="contact physiotherapy, book appointment, London physiotherapy clinic, physiotherapy consultation" />
       </Helmet>
 
+
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-blue-dark to-primary-blue-light text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-blue-dark " style={{
+          backgroundImage: `radial-gradient(circle 600px at 50% 50%, rgba(59,130,246,0.3), transparent)`,
+          }}>
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">Get In Touch</h1>
-            <p className="text-xl text-gray-100 leading-relaxed">
+            <p className="text-xl text-gray-800 leading-relaxed">
               Ready to start your recovery journey? Contact our expert team today to schedule your consultation.
             </p>
           </div>
@@ -110,7 +114,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {contactInfo.map((info, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-green to-primary-blue-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-slate-800 from-primary-green to-primary-blue-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <info.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-primary-blue-dark">{info.title}</h3>
@@ -237,7 +241,7 @@ const Contact: React.FC = () => {
                   type="submit"
                   className="w-full flex items-center justify-center space-x-2"
                 >
-                  <Send className="w-5 h-5" />
+       
                   <span>Send Message</span>
                 </button>
               </form>

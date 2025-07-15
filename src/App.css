@@ -62,33 +62,10 @@ body {
   display: block;
   margin: 0 auto;
 }
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7,7 17,7 17,17'%3E%3C/polyline%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 16px 16px;
-  transform: translate(-10px, -50%);
-  transition: all 0.4s ease-in-out;
-}
 
 .btn-primary:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 30px rgba(60, 124, 175, 0.4);
-}
-
-.btn-primary:hover::before {
-  transform: translate(10px, -50%);
-  background-color: white;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%233c7caf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7,7 17,7 17,17'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
 .btn-primary:active {
@@ -115,38 +92,6 @@ body {
   z-index: 1;
 }
 
-.btn-secondary::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: var(--primary-green);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7,7 17,7 17,17'%3E%3C/polyline%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 16px 16px;
-  transform: translate(-10px, -50%);
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-secondary::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 102%;
-  border-radius: 99px;
-  background: var(--primary-green);
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-}
 
 .btn-secondary:hover {
   color: white;
@@ -189,38 +134,7 @@ body {
   z-index: 1;
 }
 
-.btn-white::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: var(--primary-green);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7,7 17,7 17,17'%3E%3C/polyline%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 16px 16px;
-  transform: translate(-10px, -50%);
-  transition: all 0.4s ease-in-out;
-}
 
-.btn-white::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 102%;
-  border-radius: 99px;
-  background: var(--primary-green);
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-}
 
 .btn-white:hover {
   color: white;
@@ -261,24 +175,6 @@ button[type="submit"] {
   position: relative;
   overflow: hidden;
   z-index: 1;
-}
-
-button[type="submit"]::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7,7 17,7 17,17'%3E%3C/polyline%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 16px 16px;
-  transform: translate(-10px, -50%);
-  transition: all 0.4s ease-in-out;
 }
 
 button[type="submit"]:hover {

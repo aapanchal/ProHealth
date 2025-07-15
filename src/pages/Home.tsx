@@ -69,7 +69,7 @@ const Home: React.FC = () => {
       {/* About Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid  gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 {ABOUT_CONTENT.hero.title}
@@ -88,17 +88,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/6111707/pexels-photo-6111707.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="About us"
-                className="rounded-lg shadow-lg"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg">
-                <Award size={32} />
-                <div className="mt-2 font-semibold">Award Winning</div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
